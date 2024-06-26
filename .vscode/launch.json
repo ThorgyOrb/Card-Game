@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
+            "name": "Attach to Unity",
+            "type": "vstuc",
+            "request": "attach"
+        }
+    ]
+}

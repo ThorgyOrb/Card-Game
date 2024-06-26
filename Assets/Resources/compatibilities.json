@@ -1,0 +1,15 @@
+{
+    "compatibilities": [
+      {
+        "id1": 1,
+        "id2": 2,
+        "resultID": 4
+      },
+      {
+        "id1": 2,
+        "id2": 4,
+        "resultID": 6
+      }
+    ]
+  }
+  

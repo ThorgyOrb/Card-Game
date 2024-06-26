@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2549042491769476862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3293406453229802911}
+  - component: {fileID: 3293406453229802910}
+  m_Layer: 0
+  m_Name: deckManagger
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3293406453229802911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2549042491769476862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.66, y: 1.96, z: -7.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3293406453229802910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2549042491769476862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5890219d6d3a1794eb24659734f8ae15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newCard: {fileID: 0}
+  c1: {fileID: 4703509753167108467, guid: 45b4b99c3eaca2c4ea8ef3dd1d17775b, type: 3}
+  positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  handPositions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  hand:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fusion:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  deck:
+  - {fileID: 9074053838704197160, guid: 903d197630cc7644a89e72ea52a48da7, type: 3}
+  - {fileID: 5302553430302682614, guid: a194c0dff6508ba4e975d2bb19096c92, type: 3}
+  - {fileID: 5581432215436479818, guid: 8858f7bf9951d874ba18aa5aea17fb48, type: 3}
+  - {fileID: 8663608639134593437, guid: 74356521b85490845a6aa220e2e021c0, type: 3}
+  - {fileID: 3026301697407769979, guid: b12817f76cc7475468465298dfe6e2a8, type: 3}
+  - {fileID: 6950957071366813820, guid: a663633961969544ab44fecba65ad36f, type: 3}
+  - {fileID: 9188672067512027135, guid: ddbddbb9f4d0f194c9c0f4c8b5f28082, type: 3}
+  - {fileID: 1335230261381623765, guid: f1427174360ad7b47a25bce885820d44, type: 3}
+  - {fileID: 6384187561807645874, guid: 0509dc6aef1f71a4387e6d81ff6ffd8d, type: 3}
+  - {fileID: 5849536980300041322, guid: 6350aa91d6e5a0c45a32e6a93763ec8e, type: 3}
+  - {fileID: 1293299541558905748, guid: a361d6297cfa6684cb2249245318d2dd, type: 3}
+  - {fileID: 8059640269457462562, guid: bec2fe0e43d7c8c45a00e7e8326bedc5, type: 3}
+  - {fileID: 4301808333920723767, guid: 466f12dea61d0474093aa5689230a5f2, type: 3}
+  - {fileID: 4301808333920723767, guid: 466f12dea61d0474093aa5689230a5f2, type: 3}
+  - {fileID: 233199646879644993, guid: 934fd816e12b65d4ab7f030eff18ee4b, type: 3}
+  - {fileID: 4301808333920723767, guid: 466f12dea61d0474093aa5689230a5f2, type: 3}
+  - {fileID: 5095287589856615246, guid: df1b5adfa82336c43a759d61c2f7bc5b, type: 3}
+  - {fileID: 7360246654299880356, guid: 82f4468e24bcc794db544df6ff0da45b, type: 3}
+  - {fileID: 9188672067512027135, guid: ddbddbb9f4d0f194c9c0f4c8b5f28082, type: 3}
+  - {fileID: 3026301697407769979, guid: b12817f76cc7475468465298dfe6e2a8, type: 3}
+  - {fileID: 5581432215436479818, guid: 8858f7bf9951d874ba18aa5aea17fb48, type: 3}
+  - {fileID: 5849536980300041322, guid: 6350aa91d6e5a0c45a32e6a93763ec8e, type: 3}
+  - {fileID: 8059640269457462562, guid: bec2fe0e43d7c8c45a00e7e8326bedc5, type: 3}
+  - {fileID: 9188672067512027135, guid: ddbddbb9f4d0f194c9c0f4c8b5f28082, type: 3}
+  - {fileID: 1293299541558905748, guid: a361d6297cfa6684cb2249245318d2dd, type: 3}
+  - {fileID: 7360246654299880356, guid: 82f4468e24bcc794db544df6ff0da45b, type: 3}
+  - {fileID: 5849536980300041322, guid: 6350aa91d6e5a0c45a32e6a93763ec8e, type: 3}
+  - {fileID: 6568092850519396014, guid: 9e2a4acf5df780047b142aa2256930bd, type: 3}
+  - {fileID: 9074053838704197160, guid: 903d197630cc7644a89e72ea52a48da7, type: 3}
+  - {fileID: 1335230261381623765, guid: f1427174360ad7b47a25bce885820d44, type: 3}
+  - {fileID: 9188672067512027135, guid: ddbddbb9f4d0f194c9c0f4c8b5f28082, type: 3}
+  - {fileID: 3026301697407769979, guid: b12817f76cc7475468465298dfe6e2a8, type: 3}
+  - {fileID: 7360246654299880356, guid: 82f4468e24bcc794db544df6ff0da45b, type: 3}
+  - {fileID: 233199646879644993, guid: 934fd816e12b65d4ab7f030eff18ee4b, type: 3}
+  - {fileID: 4301808333920723767, guid: 466f12dea61d0474093aa5689230a5f2, type: 3}
+  - {fileID: 4301808333920723767, guid: 466f12dea61d0474093aa5689230a5f2, type: 3}
+  - {fileID: 6384187561807645874, guid: 0509dc6aef1f71a4387e6d81ff6ffd8d, type: 3}
+  - {fileID: 5302553430302682614, guid: a194c0dff6508ba4e975d2bb19096c92, type: 3}
+  - {fileID: 5302553430302682614, guid: a194c0dff6508ba4e975d2bb19096c92, type: 3}
+  - {fileID: 5095287589856615246, guid: df1b5adfa82336c43a759d61c2f7bc5b, type: 3}
+  deckGame:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  inHand: 0000000000
+  inHandAux: 0000000000
+  cardsScriptH:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  cardsScriptH1:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  cardsScriptF:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  cardsScriptD:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  cardsList: []
+  inFusion: 0000000000
+  cardsInFusion: 0
+  ran: 0
+  isFusion: 0
+  mp1: {fileID: 0}
+  posicion: 6
