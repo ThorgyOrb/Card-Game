@@ -32,7 +32,7 @@ public class CardSelector : MonoBehaviour
 
     void Update()
     {
-        if (!isSelected)
+        if(gameController.isSelectingCards )
         {
             if (isFirstUpdate)
             {
@@ -64,6 +64,9 @@ public class CardSelector : MonoBehaviour
                 {
                     cameraAnimator.SetBool("IsSelectedCards", true);
                 }
+                gameController.isSelectingCards = false;
+                gameController.isSelectingPosition = true;
+                gameController.faseGame = 1;
             }
             if (selector != null)
             {

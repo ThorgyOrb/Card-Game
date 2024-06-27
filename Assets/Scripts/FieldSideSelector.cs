@@ -11,7 +11,7 @@ public class FieldSideSelector : MonoBehaviour
     public Sprite indicatorSprite; // Sprite para indicar la posición seleccionada visualmente
     private GameObject indicatorObject; // Objeto para mostrar el indicador
     public FusionController fusionController; // Referencia al FusionController
-
+    public GameController gameController;
     void Start()
     {
         // Empezar seleccionando la primera posición de monstruos
@@ -33,6 +33,8 @@ public class FieldSideSelector : MonoBehaviour
 
     void Update()
     {
+        if(gameController.isSelectingPosition)
+        {
         // Manejar la entrada del teclado para moverse entre posiciones y cambiar de campo
         if (isMonstersField)
         {
@@ -72,9 +74,13 @@ public class FieldSideSelector : MonoBehaviour
         }
 
         // Enviar la posición seleccionada al FusionController cuando se presiona Space
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)&& gameController.faseGame == 1)
         {
             fusionController.SetFusionPosition(selectedPosition.position);
+            Debug.Log("Selected position: " + selectedPosition.name + " Position: " + selectedPosition.position);
+            gameController.isFusionReady = true;
+            gameController.faseGame = 2;
+        }
         }
     }
 

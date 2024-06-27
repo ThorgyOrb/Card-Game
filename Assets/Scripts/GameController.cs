@@ -6,11 +6,15 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    public bool isSelectingCards = true;
+    public bool isSelectingPosition = false;
+    public bool isFusionReady = false;
     public TextMeshProUGUI cardName;
     public TextMeshProUGUI cardAtack;
     public TextMeshProUGUI cardDefence;
     //public TextMeshProUGUI selectedGuardianStar;
     public TextMeshProUGUI[] guardianStar = new TextMeshProUGUI[2];
+    public int faseGame = 0;
     // Start is called before the first frame update
     void Start()
     {

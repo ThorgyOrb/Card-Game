@@ -11,7 +11,9 @@ public class FusionController : MonoBehaviour
 
     private CompatibilityList compatibilityList;
     private bool fusionObjectsReady = false;
- private Vector3 fusionPosition;
+    private Vector3 fusionPosition;
+
+    public GameController gameController;
 
     void Start()
     {
@@ -20,7 +22,8 @@ public class FusionController : MonoBehaviour
 
     void Update()
     {
-        if (fusionObjectsReady && Input.GetKeyDown(KeyCode.Space))
+        if(gameController.isFusionReady && fusionObjectsReady && Input.GetKeyDown(KeyCode.Space) && gameController.faseGame == 2)
+        //if (fusionObjectsReady && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("...");
             Debug.Log("Cartas seleccionadas Para la fusion: ");
@@ -61,7 +64,10 @@ public class FusionController : MonoBehaviour
         GameObject fusionPrefab = Resources.Load<GameObject>(prefabPath);
         if (fusionPrefab != null)
         {
+            // Usar la posición de fusión correcta al instanciar el objeto
             GameObject fusionResult = Instantiate(fusionPrefab, fusionPosition, Quaternion.identity);
+            fusionResult.transform.Rotate(Vector3.right, 90);
+            fusionResult.transform.position += new Vector3(0, 0.6f, 0);
             MaterialFusion fusionMaterial = fusionResult.GetComponent<MaterialFusion>();
             if (fusionMaterial != null)
             {
@@ -87,6 +93,8 @@ public class FusionController : MonoBehaviour
         }
     }
 }
+
+
     public GameObject SpawnFusionResult(int fusionID)
     {
         GameObject fusionResult = null;
