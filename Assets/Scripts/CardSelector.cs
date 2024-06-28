@@ -14,25 +14,50 @@ public class CardSelector : MonoBehaviour
     public bool isSelected = false;
     public Camera cameraWithAnimation;
     private Animator cameraAnimator;
+    public DeckManager deckManager;
 
     void Start()
-    {   
+    {  
+        float xPosition = -2.388f;
+        float yPosition = 0.204f;
+        float zPosition = -6.93f; 
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
-        
-        if (cards.Length > 0)
+        deckManager = GameObject.Find("DeckManager").GetComponent<DeckManager>();
+
+         if (deckManager != null)
+    {
+        for (int i = 0; i < deckManager.hand.Length; i++)
         {
-            MoveSelectorToCard(currentIndex); 
-            SendCurrentCardData();         
+            if (deckManager.hand[i] != null)
+            {
+                GameObject card = deckManager.hand[i];
+                card.transform.position = new Vector3(xPosition, yPosition, zPosition);
+
+                // Instanciar la carta y actualizar la referencia en `cards`
+                GameObject instantiatedCard = Instantiate(card, card.transform.position, card.transform.rotation);
+                cards[i] = instantiatedCard;
+                xPosition += 1.18f;
+
+               
+            }
         }
-         if (cameraWithAnimation != null)
-        {
-            cameraAnimator = cameraWithAnimation.GetComponent<Animator>();
-        }
+    }
+
+    if (cards.Length > 0)
+    {
+        MoveSelectorToCard(currentIndex); 
+        SendCurrentCardData();         
+    }
+
+    if (cameraWithAnimation != null)
+    {
+        cameraAnimator = cameraWithAnimation.GetComponent<Animator>();
+    }
     }
 
     void Update()
     {
-        if(gameController.isSelectingCards )
+        if(gameController.isSelectingCards && cards.Length == 5)
         {
             if (isFirstUpdate)
             {

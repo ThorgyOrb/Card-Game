@@ -74,7 +74,7 @@ public class FieldSideSelector : MonoBehaviour
         }
 
         // Enviar la posición seleccionada al FusionController cuando se presiona Space
-        if (Input.GetKeyDown(KeyCode.Space)&& gameController.faseGame == 1)
+        if (Input.GetKeyDown(KeyCode.W)&& gameController.faseGame == 1)
         {
             fusionController.SetFusionPosition(selectedPosition.position);
             Debug.Log("Selected position: " + selectedPosition.name + " Position: " + selectedPosition.position);

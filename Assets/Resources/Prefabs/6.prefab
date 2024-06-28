@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3172705457688813301}
   - component: {fileID: 6220610851317146534}
   m_Layer: 0
-  m_Name: Text (TMP) (1)
+  m_Name: DEF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,7 +200,7 @@ Transform:
   m_GameObject: {fileID: 434129325503979567}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.028000116, y: 0.204, z: -6.93}
   m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -319,7 +319,12 @@ MonoBehaviour:
   fusionID: 6
   objectTipe: 6
   objectName: 6
+  objectDefence: 0
   objectAtack: 6
+  guardianStar:
+  - a
+  - a
+  selectedGuardianStar: 
 --- !u!1 &819697819390394551
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +337,7 @@ GameObject:
   - component: {fileID: 7331153509856604606}
   - component: {fileID: 6396588599168574406}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: ATK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -707,6 +712,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703509753167108466, guid: 45b4b99c3eaca2c4ea8ef3dd1d17775b, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703509753167108467, guid: 45b4b99c3eaca2c4ea8ef3dd1d17775b, type: 3}
+      propertyPath: m_text
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4703509753167108467, guid: 45b4b99c3eaca2c4ea8ef3dd1d17775b, type: 3}
