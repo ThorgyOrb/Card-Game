@@ -424,9 +424,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fusionID: 1
   objectTipe: 1
-  objectName: 1
-  objectDefence: 0
-  objectAtack: 1
+  objectName: 1asdasd
+  objectDefence: 1200
+  objectAtack: 1500
   guardianStar:
   - SUN
   - MOON

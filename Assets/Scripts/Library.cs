@@ -14,6 +14,7 @@ public class Library : MonoBehaviour, IPointerEnterHandler
     //public cards[] cardsScriptD = new cards[17]; 
     public TMP_Text nombre;
     public TMP_Text numeroC;
+    public TMP_Text ataque;
     public AudioSource move;
     public Image icon;
 
@@ -30,13 +31,13 @@ public class Library : MonoBehaviour, IPointerEnterHandler
 
         for (int i = 0; i < 17; i++)
         {
-            deck[i] = Resources.Load<GameObject>("Prefabs/"+(i+1));
+           // deck[i] = Resources.Load<GameObject>("Prefabs/"+(i+1));
 
             //create a new card
            // cardsScriptD[i] = deck[i].GetComponent<cards>();
 
             GameObject newCard = Instantiate(card, transform.position, Quaternion.identity);
-
+            
             //set the parent of the new card to the deck
             newCard.transform.SetParent(transform);
 
@@ -50,6 +51,9 @@ public class Library : MonoBehaviour, IPointerEnterHandler
             newCard.transform.localScale = new Vector3(1, 1, 1);
             //change the source image of the card
             newCard.GetComponent<Image>().sprite = Resources.Load<Sprite>("Cards/"+(i+1));
+
+           // Debug.Log("Card name: "+deck[i].objectName);
+
             
         }
 
@@ -85,6 +89,7 @@ public class Library : MonoBehaviour, IPointerEnterHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+
         icon.enabled = true;
         move.Play();
         string id = eventData.pointerEnter.name;
@@ -93,8 +98,12 @@ public class Library : MonoBehaviour, IPointerEnterHandler
         int idC = int.Parse(id);
         for (int i = 0; i < 17; i++)
         {
+            MaterialFusion materialFusion = cards[i].GetComponent<MaterialFusion>();
             if (idC == i+1)
             {
+                nombre.text = cards[i].name;
+                nombre.text = materialFusion.objectName;
+                ataque.text = materialFusion.objectAtack.ToString();
                 //nombre.text = cardsScriptD[i].cardName;
               //  nombre.text = cardsScript[i].cardName;
             }

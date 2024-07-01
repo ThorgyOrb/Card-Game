@@ -318,9 +318,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fusionID: 2
   objectTipe: 2
-  objectName: 2
-  objectDefence: 0
-  objectAtack: 2
+  objectName: 345345345
+  objectDefence: 1555
+  objectAtack: 5622
   guardianStar:
   - a
   - a
